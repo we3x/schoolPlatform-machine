@@ -1,0 +1,6 @@
+- name: install_pip_packages
+  sudo: true
+  with_items: pip_packages
+  pip:
+    name: "{{item.name}}"
+    executable: pip3

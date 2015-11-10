@@ -1,0 +1,11 @@
+- name: update
+  sudo: yes
+  apt:
+    update_cache: yes
+
+- name: install packages
+  sudo: true
+  with_items: packages
+  apt:
+    pkg: "{{ item.name }}"
+    state: latest

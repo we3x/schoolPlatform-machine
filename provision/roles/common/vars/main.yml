@@ -1,0 +1,5 @@
+packages:
+  - name: python3-pip
+
+pip_packages:
+  - name: Django

@@ -1,0 +1,7 @@
+- hosts: all
+  pre_tasks:
+  - include: roles/common/pre_task/main.yml
+  tasks:
+  - include: roles/common/task/main.yml
+  roles:
+    - common
