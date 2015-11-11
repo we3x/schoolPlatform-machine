@@ -1,0 +1,10 @@
+- name: create projects directory
+  file:
+    path: /vagrant/projects
+    state: directory
+
+- name: clone repos
+  with_items: vagrant_repos
+  git:
+    repo: "{{item.url}}"
+    dest: "/vagrant/projects/{{item.dest}}"

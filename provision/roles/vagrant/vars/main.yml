@@ -1,0 +1,6 @@
+vagrant_repos:
+  - url: https://github.com/jjz-hsh/api
+    dest: api
+  - url: https://github.com/jjz-hsh/frontend
+    dest: frontend
+
