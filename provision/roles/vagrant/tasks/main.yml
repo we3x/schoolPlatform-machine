@@ -26,3 +26,10 @@
   command: bash /tmp/npm-install.sh
   args:
     creates: /usr/bin/npm
+
+- name: install gulp
+  sudo: yes
+  npm:
+    global: yes
+    state: latest
+    name: gulp
