@@ -4,3 +4,4 @@ packages:
 
 pip_packages:
   - name: Django
+  - name: djangorestframework
