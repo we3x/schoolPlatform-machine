@@ -5,3 +5,5 @@ packages:
 pip_packages:
   - name: Django
   - name: djangorestframework
+  - name: django-cors-headers
+  - name: djangorestframework-jwt
