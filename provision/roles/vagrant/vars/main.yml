@@ -1,6 +1,6 @@
 vagrant_repos:
-  - url: https://github.com/jjz-hsh/api
+  - url: https://we3x98@bitbucket.org/we3x98/api.git
     dest: api
-  - url: https://github.com/jjz-hsh/frontend
+  - url: https://we3x98@bitbucket.org/we3x98/frontend.git
     dest: frontend
 
