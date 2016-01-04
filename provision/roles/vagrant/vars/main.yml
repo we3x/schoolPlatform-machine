@@ -1,6 +1,6 @@
 vagrant_repos:
-  - url: https://we3x98@bitbucket.org/we3x98/api.git
+  - url: https://github.com/we3x/schoolPlatform-api.git
     dest: api
-  - url: https://we3x98@bitbucket.org/we3x98/frontend.git
+  - url: https://github.com/we3x/schoolPlatform-frontend.git
     dest: frontend
 
