@@ -1,9 +1,10 @@
 packages:
-  - name: python3-pip
+  - name: curl
   - name: git
+  - name: python3-pip
 
 pip_packages:
   - name: Django
   - name: djangorestframework
-  - name: django-cors-headers
   - name: djangorestframework-jwt
+  - name: django-cors-headers
