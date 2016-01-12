@@ -3,11 +3,11 @@
     path: /vagrant/projects
     state: directory
 
-- name: clone repos
-  with_items: vagrant_repos
-  git:
-    repo: "{{item.url}}"
-    dest: "/vagrant/projects/{{item.dest}}"
+# - name: clone repos
+#   with_items: vagrant_repos
+#   git:
+#     repo: "{{item.url}}"
+#     dest: "/vagrant/projects/{{item.dest}}"
 
 - name: install nodejs legacy
   sudo: yes
@@ -26,6 +26,10 @@
   command: bash /tmp/npm-install.sh
   args:
     creates: /usr/bin/npm
+
+- name: install node modules
+  npm:
+    path: /vagrant/projects/frontend/
 
 - name: install gulp
   sudo: yes
